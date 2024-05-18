@@ -9,7 +9,7 @@ import { useState } from "react"
 const links=[
   {url: "/" , title: "Home"},
   {url: "/About" , title: "About"},
-  {url: "/MyWork" , title: "Projects"},
+  {url: "/Projects" , title: "Projects"},
   {url: "/Contact" , title: "Contact"}
 ]
 
@@ -73,7 +73,7 @@ const Navbar = () => {
   return (
     <div className={` ${outfit.className} h-full  flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 p:px-48 `}>
       
-      <div className="hidden md:flex text-[20px] font-medium gap-8 w-1/3">
+      <div className="hidden md:flex text-[20px] font-regular gap-8 w-1/3">
       {links.map((link)=>(
         <Link href={link.url} key={link.title}>{link.title}</Link>
       ))}
