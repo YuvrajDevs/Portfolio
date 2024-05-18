@@ -1,4 +1,6 @@
 "use client"
+import {Outfit } from "next/font/google";
+const outfit = Outfit({ subsets: ["latin"] });
 import {motion} from "framer-motion"
 import Image from "next/image"
 import Link from "next/link"
@@ -69,29 +71,29 @@ const Navbar = () => {
   }
 
   return (
-    <div className="h-full flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 p:px-48">
+    <div className={` ${outfit.className} h-full  flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 p:px-48 `}>
       
-      <div className="hidden md:flex gap-5 w-1/3">
+      <div className="hidden md:flex text-[20px] font-medium gap-8 w-1/3">
       {links.map((link)=>(
         <Link href={link.url} key={link.title}>{link.title}</Link>
       ))}
       </div>
      {/* LOGO */}
       <div className="md:hidden lg:flex justify-center w-1/3">
-       <span>LOGO</span>
+       <Image src="/yuvraj.png" alt="" width={130} height={130}  />
       </div>
 
-      <div className="hidden md:flex gap-3 w-1/3 items-center justify-center">
+      <div className="hidden md:flex gap-12 w-1/3 items-center justify-center">
         <Link href="#">
-        <Image src="/github.png" alt="" width={24} height={24}/>
+        <Image src="/github.png" alt="" width={50} height={50}/>
         </Link>
 
         <Link href="#">
-        <Image src="/linkedin.png" alt="" width={24} height={24}/>
+        <Image src="/linkedin.png" alt="" width={50} height={50}/>
         </Link>
 
         <Link href="#">
-        <Image src="/dribbble.png" alt="" width={24} height={24}/>
+        <Image src="/behance.png" alt="" width={50} height={50}/>
         </Link>
         
       </div>
