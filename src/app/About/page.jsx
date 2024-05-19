@@ -29,8 +29,8 @@ const About = () => {
             <p className="text-[20px] lg:w-[500px]">Lorem ipsum Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates a illum exercitationem molestiae sint excepturi quibusdam aperiam sed vel possimus! dolor sit amet consectetur adipisicing elit. Perferendis molestiae debitis beatae, sunt consequatur rem cupiditate? Vitae, consequuntur numquam provident magnam odit nulla praesentium iste vero labore temporibus, mollitia optio?</p>
           </div>
 
-          < div className=" hidden absolute top-0 right-0  lg:flex items-center ">
-          <Image  src="/gojo.jpg" className=" lg:h-[650px] lg:w-[450px] xl:pr-44 xl:w-[650px] xl:h-[700px] "  alt="" height={200} width={700}/>
+          < div className=" hidden absolute top-0 right-0 pt-5 lg:flex items-center ">
+          <Image  src="/gojo.jpg" className=" lg:h-[650px] lg:w-[450px]  xl:pr-44 xl:w-[650px] xl:h-[700px] "  alt="" height={200} width={700}/>
           </div>
            
         </div>
