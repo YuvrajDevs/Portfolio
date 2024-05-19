@@ -12,7 +12,7 @@ const About = () => {
 
         {/* container */}
         <div className="flex flex-col  ">
-        <div className="flex p-6 pt-5  sm:px-10  md:px-10 lg:px-20 xl:px-44 lg:hidden items-center  ">
+        <div className="flex p-6 pt-5  sm:px-10  md:px-10 lg:px-20 xl:px-44 lg:hidden items-center -z-30  ">
            <Image src="/hero2.jpg" alt="" width={250} height={250}/>
             </div> 
         {/* text  */}
@@ -24,13 +24,13 @@ const About = () => {
            <div className="flex xl:w-[550px]">
         
           {/* about me  */}
-           <div className="flex flex-col   gap-6 justify-center">
+           <div className="flex flex-col z-30  gap-6 justify-center">
             <h1 className="text-[30px] lg:w-[550px] font-bold">About Me</h1>
-            <p className="text-[20px] lg:w-[550px]">Lorem ipsum Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates a illum exercitationem molestiae sint excepturi quibusdam aperiam sed vel possimus! dolor sit amet consectetur adipisicing elit. Perferendis molestiae debitis beatae, sunt consequatur rem cupiditate? Vitae, consequuntur numquam provident magnam odit nulla praesentium iste vero labore temporibus, mollitia optio?</p>
+            <p className="text-[20px] lg:w-[500px]">Lorem ipsum Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates a illum exercitationem molestiae sint excepturi quibusdam aperiam sed vel possimus! dolor sit amet consectetur adipisicing elit. Perferendis molestiae debitis beatae, sunt consequatur rem cupiditate? Vitae, consequuntur numquam provident magnam odit nulla praesentium iste vero labore temporibus, mollitia optio?</p>
           </div>
 
-          < div className=" hidden absolute right-0   lg:flex items-center ">
-          <Image  src="/lol2.jpg" className="xl:h-[600px] w-[500px]"  alt="" height={400} width={350}/>
+          < div className=" hidden absolute top-0 right-0  lg:flex items-center ">
+          <Image  src="/gojo.jpg" className=" lg:h-[650px] lg:w-[450px] xl:pr-44 xl:w-[650px] xl:h-[700px] "  alt="" height={200} width={700}/>
           </div>
            
         </div>

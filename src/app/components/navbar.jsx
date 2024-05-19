@@ -71,7 +71,7 @@ const Navbar = () => {
   }
 
   return (
-    <div className={` ${outfit.className} h-full    top-0 w-full flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 `}>
+    <div className={` ${outfit.className} h-full z-50 top-0 w-full flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 `}>
       
       <div className="hidden md:flex text-[20px] font-regular gap-8 w-1/3">
       {links.map((link)=>(
@@ -80,7 +80,9 @@ const Navbar = () => {
       </div>
      {/* LOGO */}
       <div className="md:hidden lg:flex justify-center w-1/3">
+        <Link href="/">
        <Image src="/yuvraj.png" alt="" width={130} height={130}  />
+        </Link>
       </div>
 
       <div className="hidden md:flex gap-12 w-1/3 items-center justify-center">
@@ -101,7 +103,7 @@ const Navbar = () => {
 
     {/* Menu  */}
     <div className="md:hidden">
-      <button className="w-10 h-8 flex flex-col gap-2 z-50 relative" onClick={()=> setOpen(!open)}>
+      <button className="w-10 h-8  flex flex-col gap-2 z-50 relative" onClick={()=> setOpen(!open)}>
         <motion.div variants={topVarient} animate={open ? "opened" : "closed"} className="w-8 h-1 bg-black rounded-md origin-left"></motion.div>
         <motion.div variants={centerVarient} animate={open ? "opened" : "closed"} className="w-8 h-1 bg-black rounded-md"></motion.div>
         <motion.div variants={bottomVarient} animate={open ? "opened" : "closed"} className="w-8 h-1 bg-black rounded-md origin-left"></motion.div>
@@ -111,7 +113,7 @@ const Navbar = () => {
    
    {open &&(
 
-     <motion.div variants={listVarient} initial="closed" animate="opened" className="absolute w-screen h-screen bg-black top-0 left-0 text-white flex flex-col items-center justify-center gap-8 text-xl z-40">
+     <motion.div variants={listVarient} initial="closed" animate="opened" className=" fixed  w-screen h-screen overflow-y-hidden bg-black top-0 left-0 text-white flex flex-col items-center justify-center gap-8 text-xl z-40">
      
       {links.map((link)=>(
         <motion.div variants={listitemVarient}  key={link.title} className="">
