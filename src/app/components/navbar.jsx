@@ -71,7 +71,7 @@ const Navbar = () => {
   }
 
   return (
-    <div className={` ${outfit.className} h-full  flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 p:px-48 `}>
+    <div className={` ${outfit.className} h-full    top-0 w-full flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 `}>
       
       <div className="hidden md:flex text-[20px] font-regular gap-8 w-1/3">
       {links.map((link)=>(
